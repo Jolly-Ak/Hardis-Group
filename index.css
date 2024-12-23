@@ -156,3 +156,31 @@ h1 {
         margin: 50px 0;
 
     }
+
+
+
+
+
+
+section > h2 > div{
+
+  width: 80px;
+ /* le mettre au millieu */
+  margin: 0 auto;
+  margin-top: 6px;
+  margin-bottom: 30px;
+  border: solid 1.5px rgb(44, 136, 217);
+}
+
+
+
+
+    section > h2 {
+
+      text-align: center;
+      align-items: center;
+      font-size: 2em;
+      color: #333;
+      margin: 0;
+      padding: 20px 0;
+    }
