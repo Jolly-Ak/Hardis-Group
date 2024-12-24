@@ -6,6 +6,25 @@ body {
     
     
 }
+
+
+h3{
+  font : 20px Arial, sans-serif;
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+
+
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
   
   .header {
     margin: 10px 50px;
@@ -136,15 +155,14 @@ h1 {
         text-align: start;
     }
 
-
     #accueil p {
-
-        border-radius: 10px;
-        border: solid 3px rgb(44, 136, 217);
-        background-color:rgb(213, 231, 247);
-        padding: 50px;
-        font-size: 1em;
-        margin: 0;
+      border-radius: 0 0 10px 10px;
+      border: solid 3px rgb(44, 136, 217);
+      border-top: none;
+      background-color: rgb(213, 231, 247);
+      padding: 50px;
+      font-size: 1em;
+      margin: 0;
     }
 
     section {
@@ -152,7 +170,6 @@ h1 {
         margin: 0px 50px;
         border-radius: 10px;
         height: 90vh;
-        padding: 20px;
         margin: 50px 0;
 
     }
