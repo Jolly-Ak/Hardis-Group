@@ -166,7 +166,7 @@ h1 {
     }
 
     section {
-        border : solid 3px rgb(44, 136, 217);
+        border : solid 3px rgba(201, 202, 202, 0.253);
         margin: 0px 50px;
         border-radius: 10px;
         height: 90vh;
