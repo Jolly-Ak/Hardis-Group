@@ -1,13 +1,22 @@
-document.querySelectorAll('.secteur-item').forEach(item => {
-    item.addEventListener('click', function() {
-        this.classList.add('clicked');
-    });
-});
+const items = document.querySelectorAll('.secteur-item');
 
-document.addEventListener('click', function(event) {
-    if (!event.target.closest('.secteur-item')) {
-        document.querySelectorAll('.secteur-item.clicked').forEach(item => {
-            item.classList.remove('clicked');
-        });
-    }
+// Ajoute un gestionnaire d'événements à chaque élément
+items.forEach(item => {
+    item.addEventListener('click', () => {
+        if (item.classList.contains('clicked')) {
+            // Réinitialise tous les éléments
+            items.forEach(el => el.classList.remove('clicked', 'notclicked'));
+        } else {
+            // Ajoute la classe "clicked" à l'élément cliqué
+            items.forEach(el => {
+                if (el !== item) {
+                    el.classList.add('notclicked');
+                    el.classList.remove('clicked');
+                } else {
+                    el.classList.add('clicked');
+                    el.classList.remove('notclicked');
+                }
+            });
+        }
+    });
 });
