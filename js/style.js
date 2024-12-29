@@ -5,20 +5,26 @@ items.forEach(item => {
     item.addEventListener('click', () => {
         if (item.classList.contains('clicked')) {
             // Réinitialise tous les éléments
-            items.forEach(el => el.classList.remove('clicked', 'notclicked'));
+            items.
+            forEach(el => el.classList.remove('clicked', 'notclicked'));
         } else {
             // Ajoute la classe "clicked" à l'élément cliqué
-            items.forEach(el => {
-                if (el !== item) {
-                    el.classList.add('notclicked');
-                    el.classList.remove('clicked');
-                } else {
-                    el.classList.add('clicked');
-                    el.classList.remove('notclicked');
-                }
-            });
+            loopitem(item);
         }
     });
 });
+/* ecrire hello anas  */
+console.log('hello anas');
 
+function loopitem(item) {
+    items.forEach(el => {
+        if (el !== item) {
+            el.classList.add('notclicked');
+            el.classList.remove('clicked');
+        } else {
+            el.classList.add('clicked');
+            el.classList.remove('notclicked');
+        }
+    });
+}
 
