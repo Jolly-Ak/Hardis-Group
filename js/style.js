@@ -20,3 +20,24 @@ items.forEach(item => {
         }
     });
 });
+
+
+/* cree 6 div dans le html avec une class secteur-item*/
+const secteur = document.querySelector('.secteur');
+const secteurItem = document.createElement('div');
+
+secteurItem.classList.add('secteur-ieazetem');
+secteurItem.innerHTML = "1";
+secteur.appendChild(secteurItem);
+
+const secteurItem2 = document.createElement('div');
+
+secteurItem2.classList.add('secteur-item');
+secteurItem2.innerHTML = "2";
+secteur.appendChild(secteurItem2);
+
+const secteurItem3 = document.createElement('div');
+
+secteurItem3.classList.add('secteur-item');
+secteurItem3.innerHTML = "3";
+secteur.appendChild(secteurItem3);
