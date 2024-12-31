@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+#testimonials {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#testimonials h2 {
+  margin-bottom: 20px;
+}
+
+.testimonial {
+  margin-bottom: 10px;
+}
+
+.rating {
+  color: #ffcc00;
+}
+
+#contact-us {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-button {
+  background-color: #6a0dad;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #4b0082;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffcc00;
+}
+
+.footer-info p {
+  margin: 5px 0;
+}
