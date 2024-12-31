@@ -4,8 +4,19 @@ body {
 }
 
 .content {
+    justify-content: center;
+    align-items: center;
     max-width: 800px;
     margin: 0 auto;
+    display: flex;
+
+    flex-wrap: wrap;
+}
+
+.items>img {
+
+    width: 100px;
+    height: auto;
 }
 
 .title {
@@ -13,7 +24,6 @@ body {
 }
 
 .values {
-    font-weight: bold;
     color: #2c3e50;
 }
 

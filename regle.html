@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,26 +8,52 @@
     <link rel="stylesheet" href="regle.css">
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    <div id="navbar"></div> 
+    <div id="navbar"></div>
     <main>
-    <div class="content">
-        <h1 class="title">Vertu et Respect des règles</h1>
-        <h2>Message de la part de nos dirigeants sur le respect des règles</h2>
-        <p class="values">Nos valeurs d'engagement, de confiance, d'efficacité, d'innovation et d'ambition guident nos actions au quotidien, en respectant des principes éthiques et loyaux. Dans un marché compétitif, où la lutte contre la corruption et la fraude est cruciale, nous avons connu une forte croissance en France et à l'international.</p>
-        <p class="message">Conformément à la loi Sapin II (9 décembre 2016), ce code de conduite fixe les règles pour prévenir la corruption et la fraude. Il engage chaque collaborateur à les respecter, avec l'exemplarité des managers comme modèle. En cas de doute, chacun est invité à consulter son manager ou la Direction juridique.</p>
-        <div class="footer">
-            <div>HECTOR</div>
-            <div>JEAN</div>
-        </div>
-    </div>
+
+        <section>
+            <h2 class="title">Vertu et Respect des règles <div></div>
+            </h2>
+            <div class="content">
+                <div class="items">
+                    <p>Message de la part de nos dirigeants sur <strong>le respect des règles</strong><br></p>
+                    <p class="values">Nos valeurs d'engagement, de confiance, d'efficacité, d'innovation et d'ambition
+                        guident
+                        nos actions au quotidien, en respectant des principes éthiques et loyaux. Dans un marché
+                        compétitif,
+                        où
+                        la lutte contre la corruption et la fraude est cruciale, nous avons connu une forte croissance
+                        en
+                        France
+                        et à l'international.</p>
+                    <p class="message">Conformément à la loi Sapin II (9 décembre 2016), ce code de conduite fixe les
+                        règles
+                        pour prévenir la corruption et la fraude. Il engage chaque collaborateur à les respecter, avec
+                        l'exemplarité des managers comme modèle. En cas de doute, chacun est invité à consulter son
+                        manager
+                        ou
+                        la Direction juridique.</p>
+                </div>
+                <div class="items">
+                    <img src="" alt="">
+                </div>
+                <div class="items">
+                    <img src="" alt="">
+                </div>
+
+
+            </div>
+        </section>
     </main>
     <script>
         // Charge le contenu de nav.html et l'insère dans le div#navbar
-    fetch('nav.html')
-        .then(response => response.text())
-        .then(data => document.getElementById('navbar').innerHTML = data)
-        .catch(error => console.error('Erreur lors du chargement de la navigation:', error));
-        </script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('navbar').innerHTML = data)
+            .catch(error => console.error('Erreur lors du chargement de la navigation:', error));
+    </script>
 </body>
+
 </html>
