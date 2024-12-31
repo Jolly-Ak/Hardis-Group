@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Dirigeants</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="navbar"></div> 
+   <main>
+    <div class="container">
+        <h1>Nos Dirigeants</h1>
+        <div class="leader">
+            <img src="jean.jpg" alt="Jean">
+            <h2>JEAN</h2>
+            <p>
+                Président de Hardis Group depuis 2019, JEAN MI a rejoint la société en 2000 où il a successivement occupé les postes de responsable vente et marketing du pôle de compétences nouvelles technologies, de directeur du département infrastructure et infogérance de 2006 à 2008, de directeur des services, du marketing et de la communication de 2009 à 2012, puis de directeur général adjoint de 2013 à avril 2014. En tant que membre du comité exécutif, il participe à la définition des orientations stratégiques du groupe et au pilotage de leurs déclinaisons opérationnelles. Nicolas Odet a notamment piloté la transformation de Hardis Group vers le cloud computing, la digitalisation et l’omnicanal.
+            </p>
+        </div>
+        <div class="separator"></div>
+        <div class="leader">
+            <img src="hector.jpg" alt="Hector">
+            <h2>HECTOR</h2>
+            <p>
+                HECTOR Coutaz a rejoint Hardis Group en 2000 pour participer à la création de la filiale conseil et AMOA du groupe, pour laquelle il a successivement occupé les fonctions de consultant en organisation et système d'information, responsable de l'activité AMOA, puis directeur général en 2010. Début 2013, il est promu au poste de directeur général adjoint d'Hardis Group. En tant que membre du comité exécutif, il participe à la définition des orientations stratégiques du groupe et au pilotage de leurs déclinaisons opérationnelles. En 2018, il devient Directeur Général.
+            </p>
+        </div>
+    </div>
+    </main>
+    <script>
+        // Charge le contenu de nav.html et l'insère dans le div#navbar
+    fetch('nav.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('navbar').innerHTML = data)
+        .catch(error => console.error('Erreur lors du chargement de la navigation:', error));
+        </script>
+</body>
+</html>

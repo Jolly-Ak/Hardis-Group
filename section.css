@@ -1,0 +1,126 @@
+.secteur-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    height: 80%;
+    place-items: center;
+}
+
+.secteur-item {
+    border-radius: 60% /100%; /* Makes it elliptical */
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+
+
+    transform:
+    perspective(750px)
+    translate3d(0px, 0px, -250px)
+    rotateX(27deg)
+    scale(0.9, 0.9);
+  border: 5px solid #e6e6e6;
+  box-shadow: 0 70px 40px -20px rgba(0, 0, 0, 0.2);
+  transition: 0.4s ease-in-out transform;
+
+  &:hover {
+    transform: translate3d(0px, 0px, -250px);
+  }
+
+}
+
+.secteur-item > p {
+    font-size: 1.2em;
+    color: #333;
+    margin: 0 10px;
+    padding: 0;
+}
+
+.secteur-item:hover {
+    transform: translateZ(-250px);
+}
+
+.secteur-item.clicked {
+    z-index: 1010;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    transform: scale(1);
+    opacity: 1;
+}
+
+.secteur-item.notclicked {
+    opacity: 0;
+    transform: scale(0.5);
+    pointer-events: none;
+}
+
+.secteur-item div, .secteur-item ul, .secteur-item li {
+    display: none;
+}
+
+.secteur-item.clicked div, .secteur-item.clicked ul, .secteur-item.clicked li {
+    display: block;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: disc; /* Définit les puces classiques */
+    margin-left: 20px; /* Décalage standard des listes */
+    padding: 0; /* Supprime les padding par défaut */
+
+}
+
+li {
+    padding: 5px;
+}
+.bottom-content {
+    width: 80%;
+    display: flex !important;
+    gap: 20px;
+    flex-flow: row wrap;
+}
+
+.bottom-content > div {
+    text-align: left;
+    font-size: 1.2em;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.left, .right {
+    width: 45%;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* selectioner le parent de l'image */
+.bottom-content > div:has(> img) {
+    margin-left: 150px  !important;
+    border: 2px solid #000; /* Example style for the parent of the image */
+}
+
+
+
+.bottom-content > div > img {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    border-radius: 8px;
+}
+
+.top {
+    
+    width: 60%;
+}
