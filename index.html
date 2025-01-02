@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hardis Group</title>
-    <link rel="stylesheet" href="/style/index.css">
-    <link rel="stylesheet" href="/style/section.css">
-    <link rel="stylesheet" href="/style/service.css">
-    <link rel="stylesheet" href="/style/footer.css">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/section.css">
+    <link rel="stylesheet" href="style/service.css">
+    <link rel="stylesheet" href="style/footer.css">
 
 
 </head>
@@ -391,7 +391,7 @@
     </section>
     <script>
         // Charge le contenu de ../nav.html et l'insère dans le div#navbar
-        fetch('../nav.html')
+        fetch('nav.html')
             .then(response => response.text())
             .then(data => document.getElementById('navbar').innerHTML = data)
             .catch(error => console.error('Erreur lors du chargement de la navigation:', error));
