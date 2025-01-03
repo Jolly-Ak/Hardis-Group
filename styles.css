@@ -27,12 +27,15 @@ h1 {
 .profile-content {
   display: flex;
   align-items: flex-start;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
 }
 
 .profile-content img {
-  width: 150px;
-  height: 150px;
-  margin-right: 20px;
+  width: 20%;
+  height: 20%;
+  margin-right: 10%;
   background-color: #ddd;
 }
 

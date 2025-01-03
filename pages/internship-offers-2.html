@@ -4,23 +4,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>POSTULER</title>
-  <link rel="stylesheet" href="contact.css">
+  <title>Postuler</title>
+  <link rel="stylesheet" href="/style/contact.css">
 </head>
 
 <body>
-  <div id="navbar"></div>
+    <div id="navbar"></div>
 
   <div class="contact-section">
-    <h2>POSTULER</h2>
-    <form>
+    <h2>Postuler</h2>
+    <form id="contactForm">
+      <label for="company">Société *</label>
+      <input type="text" id="company" name="company" required>
+
       <label for="last-name">Nom *</label>
       <input type="text" id="last-name" name="last-name" required>
 
       <label for="first-name">Prénom *</label>
       <input type="text" id="first-name" name="first-name" required>
 
-      <label for="position">Secteur </label>
+      <label for="position">Secteur</label>
       <input type="text" id="position" name="position">
 
       <label for="email">Email *</label>
@@ -29,8 +32,8 @@
       <label for="phone">Téléphone *</label>
       <input type="tel" id="phone" name="phone" required>
 
-      <label for="country">Etablissement universitaire </label>
-      <input type="text" id="country" name="country">
+      <label for="country">Etablissement universitaire</label>
+      <input type="text" id="country" name="country" >
 
       <label for="postal-code">Code postal *</label>
       <input type="text" id="postal-code" name="postal-code" required>
@@ -38,11 +41,11 @@
       <label for="subject">Niveau d'études *</label>
       <input type="text" id="subject" name="subject" required>
 
-      <label for="description">Domaine d'études </label>
+      <label for="description">Domaine d'études</label>
       <textarea id="description" name="description"></textarea>
 
       <label for="source">Année actuelle</label>
-      <textarea id="description" name="description"></textarea>
+      <input type="text" id="source" name="source">
 
       <label>
         <input type="checkbox" name="accept" required>
@@ -50,17 +53,23 @@
         page "respect des données personnelles".
       </label>
 
+
       <button type="submit">ENVOYER</button>
-  </div>
-  </form>
-  <div id="popup" class="popup">
-    Votre offre a été envoyée avec succès !
+    </form>
   </div>
 
-  <script src="contact.js"></script>
-  <script src="/js/nav.js"></script>
+  <div id="popup" class="popup">
+    Votre message a été envoyée avec succès !
+  </div>
+
+<script src="/js/nav.js"></script>
 <div id="footer"></div>
 <script src="/js/footer.js"></script>
+
+
+  <script src="/js/contact.js"></script>
+  
+
 
 </body>
 
