@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>Hardis Group</title>
     <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="style/section.css">
     <link rel="stylesheet" href="style/service.css">
+    <link rel="stylesheet" href="style/footer.css">
+
 
 </head>
 
@@ -58,7 +60,6 @@
                             <ul>
                                 <li>Créer des sites de vente en ligne.</li>
                                 <li>Envoyer des offres et pubs personnalisées.</li>
-
                                 <li>Donner des outils pratiques à leurs vendeurs.</li>
                                 <li>Suivre facilement les réclamations et réparations.</li>
                             </ul>
@@ -332,16 +333,85 @@
             </div>
         </section>
 
+        <section>
+            <div>
+                <h2>Hardis Group : Ensemble pour un Numérique Durable</h2>
+                <p>Quand innovation rime avec responsabilité écologique</p>
+            </div>
+            <div class="content">
+                <div class="left">
+                    <h3>En action</h3>
+                    <ul>
+                        <li><strong>Réduction carbone</strong> : Mesure et optimisation des émissions en ligne avec
+                            l'Accord de Paris.</li>
+                        <li><strong>Solutions éco-conçues</strong> : Développement de logiciels énergétiquement
+                            efficaces.</li>
+                        <li><strong>Accompagnement clients</strong> : Aide à concevoir des systèmes d’information
+                            durables.</li>
+                        <li><strong>Formation et sensibilisation</strong> : Programmes pour une prise de conscience
+                            collective.</li>
+                    </ul>
+                    <h2>Des Résultats Concrets 🌟</h2>
+                    <ul>
+                        <li><strong>Projet Reflex WMS</strong> : Optimisation des entrepôts avec moins d'énergie.</li>
+                        <li><strong>Site web durable</strong> : Réduction de la consommation énergétique des serveurs.
+                        </li>
+                        <li><strong>Collaboration clients écoresponsables</strong> : Nestlé, L'Oréal, Danone.</li>
+                    </ul>
+                    <a href="https://www.ecograder.com" class="button">Vérifiez ! </a>
+                </div>
+                <div class="right">
+                    <img src="ecograder-logo.jpg" alt="Ecograder Logo" class="image-placeholder">
+                </div>
+            </div>
+            <div class="right">
+                <img src="placeholder-image.jpg" alt="Placeholder" class="image-placeholder">
+            </div>
+            </div>
+            </div>
+
     </main>
+    <div id="testimonials">
+        <h2>Témoignages clients <div></div>
+        </h2>
+        <div class="testimonial">
+            <p>Client 1</p>
+            <div class="rating">★★★★★</div>
+        </div>
+        <div class="testimonial">
+            <p>Client 2</p>
+            <div class="rating">★★★★☆</div>
+        </div>
+        <div class="testimonial">
+            <p>Client 3</p>
+            <div class="rating">★★★★★</div>
+        </div>
+    </div>
+
+    </section>
     <script>
-        // Charge le contenu de nav.html et l'insère dans le div#navbar
+        // Charge le contenu de ../nav.html et l'insère dans le div#navbar
         fetch('nav.html')
             .then(response => response.text())
             .then(data => document.getElementById('navbar').innerHTML = data)
             .catch(error => console.error('Erreur lors du chargement de la navigation:', error));
     </script>
 
+    <div id="footer"></div>
+    <script>
+        // Charge le contenu de footer.html et l'insère dans le conteneur #footer
+        fetch('footer.html')
+            .then(response => {
+                if (!response.ok) throw new Error('Erreur lors du chargement du fichier footer.html');
+                return response.text();
+            })
+            .then(html => {
+                document.getElementById('footer').innerHTML = html;
+            })
+            .catch(error => console.error(error));
+    </script>
 </body>
+
 
 </html>
 <script src="js/style.js"></script>
