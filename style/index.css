@@ -6,8 +6,7 @@ body {
 }
 
 h3 {
-  font: 20px Arial, sans-serif;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   font-weight: bold;
   font-size: 1.5em;
 }
@@ -270,14 +269,6 @@ section>h2>div {
   border: solid 1.5px rgb(44, 136, 217);
 }
 
-section>div>h2>div {
-  width: 80px;
-  /* le mettre au millieu */
-  margin: 0 auto;
-  margin-top: 6px;
-  margin-bottom: 30px;
-  border: solid 1.5px rgb(44, 136, 217);
-}
 
 section>h2 {
   text-align: center;
@@ -286,4 +277,32 @@ section>h2 {
   color: #333;
   margin: 0;
   padding: 20px 0;
+}
+
+.button {
+  background-color: #6C4CFF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+
+.button:hover {
+  background-color: #5a3bdc;
+  /* Couleur légèrement plus foncée au survol */
+  transform: scale(1.05);
+  /* Légère mise en avant */
+}
+
+.button:active {
+  transform: scale(0.98);
+  /* Réduction lors du clic */
 }

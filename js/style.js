@@ -14,7 +14,6 @@ items.forEach(item => {
     });
 });
 /* ecrire hello anas  */
-console.log('hello anas');
 
 function loopitem(item) {
     items.forEach(el => {
