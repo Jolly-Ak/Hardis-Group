@@ -62,9 +62,8 @@ footer {
   margin: 0 10px;
   transition: color 0.3s ease;
 }
-.footer-links
 
-.footer-links a:hover {
+.footer-links .footer-links a:hover {
   color: #ffcc00;
 }
 
@@ -74,6 +73,5 @@ footer {
 
 h2 {
   color: #fff;
-  display: flex;
   justify-content: center;
 }
