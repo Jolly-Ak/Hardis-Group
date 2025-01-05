@@ -13,7 +13,6 @@ items.forEach(item => {
         }
     });
 });
-/* ecrire hello anas  */
 
 function loopitem(item) {
     items.forEach(el => {
