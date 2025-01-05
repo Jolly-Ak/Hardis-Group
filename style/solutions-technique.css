@@ -1,0 +1,129 @@
+/* solutions-technique.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.item {
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour les flèches */
+.arrows .item {
+    color: #555;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+}
+
+.item:has(.arrow) {
+    background-color: white !important;
+}
+
+.arrow {
+    height: 0.2em;
+    width: 7.5em;
+    position: relative;
+    background: grey;
+}
+
+
+.arrow::before,
+.arrow::after {
+
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: grey;
+    height: 0.2em;
+    width: 1.6em;
+}
+
+
+.arrow::before {
+    transform: rotate(45deg);
+    transform-origin: right bottom;
+}
+
+.arrow::after {
+    transform: rotate(-45deg);
+    transform-origin: right top;
+}
+
+
+
+.dh {
+    transform: rotate(-25deg);
+}
+
+.db {
+    transform: rotate(25deg);
+}
+
+.solution {
+    display: flex;
+    border-radius: 60% /100%;
+    /* Makes it elliptical */
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.solution {
+    font-size: 1.2em;
+    color: #333;
+    margin: auto;
+    padding: 0;
+}
+
+.column img {
+    height: 200px;
+}
+
+
+.logiciel {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+}
+
+.arrows {
+    display: flex;
+    align-items: center;
+}
