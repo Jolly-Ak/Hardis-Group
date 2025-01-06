@@ -399,29 +399,11 @@
     </div>
 
     </section>
-    <script>
-        // Charge le contenu de ../nav.html et l'insère dans le div#navbar
-        fetch('nav.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('navbar').innerHTML = data)
-            .catch(error => console.error('Erreur lors du chargement de la navigation:', error));
-    </script>
-
+    <script src="/js/nav.js"></script>
     <div id="footer"></div>
-    <script>
-        // Charge le contenu de footer.html et l'insère dans le conteneur #footer
-        fetch('footer.html')
-            .then(response => {
-                if (!response.ok) throw new Error('Erreur lors du chargement du fichier footer.html');
-                return response.text();
-            })
-            .then(html => {
-                document.getElementById('footer').innerHTML = html;
-            })
-            .catch(error => console.error(error));
-    </script>
+    <script src="/js/footer.js"></script>
+    <script src="js/style.js"></script>
 </body>
 
 
 </html>
-<script src="js/style.js"></script>
