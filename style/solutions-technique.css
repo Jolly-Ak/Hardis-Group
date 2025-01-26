@@ -1,4 +1,3 @@
-/* solutions-technique.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -37,7 +36,6 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Style pour les flèches */
 .arrows .item {
     color: #555;
     background-color: transparent;
@@ -93,7 +91,6 @@ body {
 .solution {
     display: flex;
     border-radius: 60% /100%;
-    /* Makes it elliptical */
     border: 1px solid #ccc;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;

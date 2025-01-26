@@ -1,4 +1,3 @@
-/* /styles.css */
 body {
   margin: 0 60px;
   padding: 0;
@@ -19,7 +18,6 @@ p {
 }
 
 .header {
-  /* make it bold */
   margin: 10px 50px;
   border: none;
   border-radius: 20px;
@@ -225,10 +223,8 @@ h1 {
   color: #333;
 }
 
-/*  met une image de font pour l'id accueil */
 
 #accueil {
-  /* make it space between */
   display: flex;
   justify-content: space-between;
 

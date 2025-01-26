@@ -75,11 +75,8 @@
 
 ul {
     list-style-type: disc;
-    /* Définit les puces classiques */
     margin-left: 20px;
-    /* Décalage standard des listes */
     padding: 0;
-    /* Supprime les padding par défaut */
 
 }
 
@@ -113,11 +110,9 @@ li {
 }
 
 
-/* selectioner le parent de l'image */
 .bottom-content>div:has(> img) {
     margin-left: 150px !important;
     border: 2px solid #000;
-    /* Example style for the parent of the image */
 }
 
 
